@@ -1,29 +1,38 @@
+@font-face {
+  font-family: 'caviar';
+  src: url(images/CaviarDreams.ttf);
+}
+@font-face {
+  font-family: 'mont';
+  src: url(images/Mont-HeavyDEMO.otf);
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'mont';
 }
 .main{
   position: relative;
   width: 100%;
   height:100vh;
-  background: rgb(235, 209, 209);
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bg.png);
 }
 nav{
   display: flex;
-  width: 75%;
+  width: 1250px;
   margin: auto;
   padding: 20px 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content:flex-end;
 }
 
 nav a{
   display: inline-block;
   list-style: none;
   text-decoration: none;
-  color: rgb(85, 70, 70);
+  color: rgb(176, 164, 164);
   font-weight: bold;
+  font-family: 'caviar';
 } 
 .name {
   width: 90px;
@@ -31,7 +40,7 @@ nav a{
   object-fit: cover;
 }
 .intro{
-  margin-left: 5%;
+  margin-left: 50%;
   margin-top: 19%;
 }
 .intro h1{
@@ -39,219 +48,175 @@ nav a{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 span {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(176, 111, 111);
+  font-family:'mont';
+  color: rgb(202, 202, 222);
 }
 .intro p{
-  color: black;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(197, 193, 193);
+  font-family:'caviar';
   line-height: 30px;
-
-}
-.me{
-  left: 50%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
 }
 .aboutme{
-  background: rgb(238, 200, 200);
+  background: white;
 }
 .aboutme h1{
   line-height: 100px;
   margin-left: 45%;
 }
 .aboutme img{
-  left: 65%;
+  left: 5%;
   bottom: 90;
-  height: 20%;
+  height: 50%;
   position: absolute;
+  border-radius: 50%;
 }
 .aboutme table{
   width: 50%;
-  margin-left: 5%;
+  margin-left: 40%;
 }
-.aboutme .left{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.aboutme .right{
+  text-align: center;
+  font-family: 'caviar';
   font-size: 20px;
   margin-left: 20%;
-}
-.hobby table{
-  width: 50%;
-  margin-left: 45%;
-}
-.hobby table td{
-  vertical-align: baseline;
 }
 .hobby h2{
   line-height: 100px;
-  margin-left: 46%;
+  margin-left: 62%;
 }
-.right{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: right;
-  font-size: 20px;
-  left: 60%;
+.row{
+  display:flex;
+  margin-left: 32%;
+  justify-content: space-between;
 }
-.hobby img{
-  width: 325px;
-  object-fit:contain;
-  left: 10px;
-  position: absolute;
+.col{
+  flex-basis: 24%;
+  background: rgb(208, 206, 206);
+  border-radius: 30px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
 }
-.dance img{
-  left: 65%;
-  bottom: 90;
-  height: 20%;
-  position: absolute;
+.col h3{
+  text-align: center;
 }
-.dance table{
-  width: 50%;
-  margin-left: 5%;
+.hobby p{
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding:10px;
+  font-family: 'caviar';
+  text-align: center;
 }
-.dance .left{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  margin-left: 20%;
+.hobby .danceimg{
+  bottom: 90%;
+  width: 210px;
+  object-fit: contain;
+
 }
-.pottery table{
-  width: 50%;
-  margin-left: 45%;
+.hobby .pottery{
+  bottom: 90%;
+  width: 210px;
+  height: 10%;
+  object-fit: cover;
 }
-.pottery table td{
-  vertical-align: baseline;
-}
-.pottery h2{
-  line-height: 100px;
-  margin-left: 46%;
-}
-.pottery table tr .right{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: right;
-  font-size: 20px;
-  left: 60%;
-}
-.pottery img{
-  width: 325px;
-  object-fit:contain;
-  left: 10px;
-  position: absolute;
-}
-.volunteer h2{
-  line-height: 100px;
-  margin-left: 46%;
-}
-.volunteer table{
-  width: 50%;
-  margin-left: 5%;
-}
-.volunteer tr td{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  margin-left: 20%;
-}
-.volunteer img{
-  left: 75%;
-  bottom: 90;
-  height: 17%;
-  position: absolute;
+.hobby .music{
+  bottom: 90%;
+  width: 210px;
+  object-fit: contain;
 }
 .aboutfam{
-  background: rgb(233, 188, 188);
+  background: rgb(10, 10, 39);
+  margin: auto;
+  padding-top: 50px;
 }
 .aboutfam h1{
   line-height: 100px;
-  margin-left: 43%;
+  margin-left: 45%;
+  color: white;
 }
-.aboutfam img{
-  left: 43%;
-  height: 40%;
+.aboutfam .row{
+  display:flex;
+  margin-left: 6%;
+  justify-content: space-between;
+  width: 90%;
+}
+.famcol{
+  flex-basis: 28%;
+  border-radius: 10px;
+  margin-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.famcol img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.layer{
+  background: transparent;
+  height: 100%;
+  width:100%;
   position: absolute;
-  bottom: 90;
+  top:0;
+  left:0;
+  transition: 0.5s;
 }
-.aboutfam table{
-  width: 50%;
-  margin-left: 25%;
+.layer:hover{
+  background: rgb(213, 213, 227);
 }
-.aboutfam tr td{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  margin-left: 15%;
+.layer p{
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  font-family: 'caviar';
+  bottom: 0;
   text-align: center;
-}
-.mom img{
-  left: 45%;
-  height: 40%;
   position: absolute;
-  bottom: 90;
+  opacity: 0;
+  transition: 0.5s;
 }
-.mom table{
-  width: 50%;
-  margin-left: 25%;
-}
-.mom tr td{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  margin-left: 18%;
-  text-align: center;
-}
-.bro img{
-  left: 43%;
-  height: 40%;
-  position: absolute;
-  bottom: 90;
-}
-.bro table{
-  width: 50%;
-  margin-left: 25%;
-}
-.bro tr td{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  margin-left: 18%;
-  text-align: center;
-}
-.awesome img{
-  left: 40%;
-  height: 35%;
-  position: absolute;
-  bottom: 85;
-}
-.awesome h2{
-  font-family: cursive;
-  font-weight: bolder;
-  line-height: 100px;
-  margin-left: 43%;
-}
-.rowdy{
-  background: rgb(234, 180, 180);
+.layer:hover p{
+  bottom:49%;
+  opacity: 1;
 }
 .rowdy h1{
   line-height: 100px;
   margin-left: 45%;
 }
-.rowdy .img1{
-  left: 45%;
-  height: 40%;
-  position: absolute;
-  bottom: 90;
-}
+
 .rowdy table{
   width: 50%;
   margin-left: 27%;
 }
-.rowdy tr td{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  margin-left: 18%;
+.rowdy .right{
   text-align: center;
+  font-family: 'caviar';
+  font-size: 27px;
+  margin-left: 20%;
 }
-.rowdy .img2{
-  left: 17%;
-  height: 40%;
-  width: 70%;
+.rowdy img{
+  left: 5%;
+  bottom: 90;
+  height: 50%;
   position: absolute;
-  bottom: 80;
-  background:  rgb(234, 180, 180);
-  object-fit: contain;
+}
+.rowdy .rowdy2{
+  left: 20%;
+  height: 300px;
+  width: 900px;
+  object-fit: cover;
+
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(213, 213, 227);
+  color: white;
+  text-align: center;
+  
 }
